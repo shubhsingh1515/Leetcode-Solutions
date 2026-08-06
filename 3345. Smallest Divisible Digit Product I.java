@@ -1,13 +1,13 @@
 class Solution {
     public int smallestNumber(int n, int t) {
         while(true) {
-            if(digitSum(n)%t == 0)
+            if(digitProduct(n)%t == 0)
             return n;
             n++;
         }
         
     }
-    public static int digitSum(int n){
+    public static int digitProduct(int n){
         int sum = 1;
         while(n != 0){
             int k = n%10;
